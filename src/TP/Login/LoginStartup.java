@@ -17,11 +17,8 @@ public class LoginStartup {
     private static String username;
     private static String password;
 
-    public static void main(String[] args) {
-        startLogin();
-    }
     /* -------------------------------------- */
-    private static void startLogin() {
+    public static void startLogin() {
         loginFrame.setSize(700, 500);
         loginFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
