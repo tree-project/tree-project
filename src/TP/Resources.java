@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class Resources {
 
+    public static Config configFile = new Config("placeholder");
+
     public static String currentUsername;
     public static String password = "treeproject2020";
 
@@ -43,5 +45,6 @@ public class Resources {
             }
         }
     } */ // old initTreesScan, didn't make the new yet
+
     //TODO organize + get most possible resources
 }
