@@ -13,8 +13,8 @@ public class Tree {
         this.growth = growth1;
     }
 
-    public Tree initTreesScan (String filePath, int amount) {
-        Tree tree = new Tree("2" ,"2", 2);
+    public static Tree[] initTreesScan (String filePath, int amount) {
+        Tree[] tree = new Tree[amount];
         //TODO tree scanner from file
         File treeFile = new File(filePath);
         for (int i = 0; i <= amount; i++) {

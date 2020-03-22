@@ -23,9 +23,9 @@ public class Resources {
     public static String[] fileContent;
     public static String[][] fileContentSplit;
 
-    public static Tree[] trees;
+    public static Tree[] trees = Tree.initTreesScan(TreeFile.getPath(), 0);
 
-    public static void initTreesScan() {
+    /* public static void initTreesScan() {
         int i = 0;
         while (FileScanner.hasNext()) {
             fileContent[i] = FileScanner.next();
@@ -38,10 +38,10 @@ public class Resources {
 
         for (int in = 0; in < fileContentSplit.length; in++) {
             for (int ind = 0; ind < fileContentSplit[i].length; ind++) {
-                Tree tempTree = new Tree(fileContentSplit[in][ind], fileContentSplit[in][ind+1], fileContentSplit[in][ind+2]);
+                Tree tempTree = new Tree(fileContentSplit[in][ind], fileContentSplit[in][ind+1], 0);
                 trees[in] = tempTree;
             }
         }
-    }
+    } */ // old initTreesScan, didn't make the new yet
     //TODO organize + get most possible resources
 }
