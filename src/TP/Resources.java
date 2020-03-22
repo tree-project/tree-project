@@ -9,9 +9,9 @@ public class Resources {
     public static Config configFile = new Config("placeholder");
 
     public static String currentUsername;
-    public static String password = "treeproject2020";
+    public static String password = configFile.getProperty("password");
 
-    public static File TreeFile = new File("placeholder");
+    public static File TreeFile = new File(configFile.getProperty("treeFilePath"));
     public static Scanner FileScanner;
 
     static {
