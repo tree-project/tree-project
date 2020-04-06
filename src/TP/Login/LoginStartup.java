@@ -2,7 +2,6 @@ package TP.Login;
 
 import TP.MainProject.MainWindow;
 import TP.Resources;
-import org.jetbrains.annotations.NotNull;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -73,7 +72,7 @@ public class LoginStartup {
         loginFrame.setVisible(true);
     }
     /* -------------------------------------- */
-    private static void verifyLogin(@NotNull String inField) {
+    private static void verifyLogin(String inField) {
         if (inField.equals(Resources.password) && username != null) {
             Resources.currentUsername = username;
             loginFrame.dispose();
