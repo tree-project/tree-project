@@ -1,19 +1,40 @@
 package TP.Logger;
 
+import TP.Resources;
+
+import java.util.Date;
+
 public class LogManager {
-    public static void addData(LogReason reason, String name, String log) {
+    Date loginDate;
+    String workerName;
+
+    public void addData(LogReason reason, String name, String log) {
 
     }
 
-    public static void callUpdate() {
+    public void callUpdate() {
 
     }
 
-    public static void forceUpdate(String adminKey) {
+    public void forceUpdate(String adminKey) {
 
     }
 
-    public static void removeData(String adminKey, String name) {
+    public void removeData(String adminKey, String name) {
 
+    }
+
+    public Date getLoginDate() {
+        return loginDate;
+    }
+
+    public String getWorkerName() {
+        return workerName;
+    }
+
+    public LogManager(String workerName, Date loggedAt) {
+        this.loginDate = loggedAt;
+        this.workerName = workerName;
+        Resources.loginDate = loggedAt;
     }
 }
