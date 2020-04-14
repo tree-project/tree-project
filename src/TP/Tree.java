@@ -18,7 +18,7 @@ public class Tree {
         //TODO tree scanner from file
         File treeFile = new File(filePath);
 
-        for (int i = 0; i <= amount; i++) {
+        for (int i = 0; i < amount; i++) {
             Config allTreeFiles = new Config("placeholder" + i + ".cfg");
             String treeGrowth = allTreeFiles.getProperty("growth");
             String lastFertilized = allTreeFiles.getProperty("lastFertilized");
