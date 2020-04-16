@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class DataListSaver {
+/* public class DataListSaver {
     //TODO searcher and viewer
     static Tree[] trees = Resources.trees;
     static File file = new File("C:\\Users\\Sharfi\\Documents\\TreeProject\\TreeData.txt");
@@ -37,3 +37,5 @@ public class DataListSaver {
         fos.write(toWriteEncoded);
     }
 }
+
+ */
